@@ -31,7 +31,7 @@ class Server:
         assert type(page_size) is int and page_size > 0
         start, end = index_range(page, page_size)
         return self.dataset()[start:end]
-    
+
     def get_hyper(self, page: int = 1, page_size: int = 10) -> List[List]:
         """Gets the page from the dataset with hypermedia pagination."""
         assert type(page) is int and page > 0
@@ -43,11 +43,11 @@ class Server:
         next_page = page + 1 if page < total_pages else None
 
         return {
-            'page_size':page_size,
-            'page':page,
-            'data':current_data,
-            'next_page':next_page,
-            'prev_page':prev_page,
-            'total_pages':total_pages
+            'page_size': page_size,
+            'page': page,
+            'data': current_data,
+            'next_page': next_page,
+            'prev_page': prev_page,
+            'total_pages': total_pages
         }
 
