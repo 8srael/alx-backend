@@ -43,11 +43,11 @@ class Server:
         next_page = page + 1 if page < total_pages else None
 
         return {
-            'page_size' : page_size,
-            'page' : page,
-            'data': current_data,
-            'next_page' : next_page,
-            'prev_page' : prev_page,
-            'total_pages' : total_pages
+            'page_size':page_size,
+            'page':page,
+            'data':current_data,
+            'next_page':next_page,
+            'prev_page':prev_page,
+            'total_pages':total_pages
         }
 
