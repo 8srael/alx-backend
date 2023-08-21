@@ -65,4 +65,3 @@ class Server:
             'next_index': next_index
         }
         return page_info
-
