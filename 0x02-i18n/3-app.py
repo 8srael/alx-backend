@@ -4,6 +4,7 @@
 
 from flask import Flask, render_template
 from flask_babel import Babel
+from flask import request
 
 
 class Config:
@@ -27,7 +28,7 @@ def get_locale() -> str:
 @app.route('/', strict_slashes=False)
 def index():
     """returns a template"""
-    return render_template('2-index.html')
+    return render_template('3-index.html')
 
 
 if __name__ == "__main__":
