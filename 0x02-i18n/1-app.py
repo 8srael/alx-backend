@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-""" Task 0. Basic Flask app"""
+""" Task 1. Basic Babel setup"""
 
 from flask import Flask, render_template
 from flask_babel import Babel
