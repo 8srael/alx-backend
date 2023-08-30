@@ -26,6 +26,7 @@ users = {
     4: {"name": "Teletubby", "locale": None, "timezone": "Europe/London"},
 }
 
+
 def get_user() -> Union[Dict, None]:
     """Returns user dictionary or None"""
     id = request.args.get('login_as')
@@ -33,11 +34,13 @@ def get_user() -> Union[Dict, None]:
         return users.get(int(id))
     return None
 
+
 @app.before_request
 def before_request() -> None:
     """Use get_user to find a user if any"""
     user = get_user()
     g.user = user
+
 
 @babel.localeselector
 def get_locale() -> str:
