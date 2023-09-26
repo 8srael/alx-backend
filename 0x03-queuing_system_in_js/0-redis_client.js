@@ -4,15 +4,15 @@
 
 import redis from 'redis';
 
-const redis_client = redis.createClient({
+const redisClient = redis.createClient({
   host: 'localhost',
-  port: 6379
+  port: 6379,
 });
 
-redis_client.on('connect', () => {
+redisClient.on('connect', () => {
   console.log('Redis client connected to the server');
 });
 
-redis_client.on('error', (error) => {
+redisClient.on('error', (error) => {
   console.error(`Redis client not connected to the server: ${error}`);
 });
