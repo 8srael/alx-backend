@@ -1,5 +1,5 @@
 /**
- * Task 1. Write a script that connects to the local Redis server
+ * Task 1. Write a script that connects to the local Redis server.
  */
 
 import redis from 'redis';
