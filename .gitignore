@@ -4,3 +4,5 @@ env/
 0x02-i18n/00-app.py
 0x02-i18n/static/style.css
 0x02-i18n/templates/100-index.html
+node_modules/
+0x03-queuing_system_in_js/package-lock.json
