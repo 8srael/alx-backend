@@ -1,3 +1,7 @@
+/**
+ * Task 13. Can I have a seat?
+ */
+
 import express from 'express';
 import { promisify } from 'util';
 import { createQueue } from 'kue';
