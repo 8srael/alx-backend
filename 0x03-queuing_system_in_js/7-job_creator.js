@@ -51,8 +51,6 @@ const jobs = [
   },
 ];
 
-console.log('****************************************************');
-
 const queue = createQueue({ name: 'push_notification_code_2' });
 
 for (const jobData of jobs) {
